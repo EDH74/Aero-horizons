@@ -1,0 +1,75 @@
+@charset "UFT-8";
+
+@font-face {
+    font-family: 'rubik';
+    src: url(/assets/fonts/Rubik/Rubik-Italic-VariableFont_wght.ttf) format('truetype');
+}
+
+:root{
+    --vermelho: #D91438;
+    --azul-escuro:#020659;
+    --azul-claro:#0F5FA6;
+    --laranja: #F2762E;
+}
+
+
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: rubik, sans-serif;
+    font-size: 1em;
+background-image: linear-gradient(to left, var(--azul-escuro), var(--azul-claro));
+}
+
+
+header{
+    drop-shadow: 0px 4px 4px rgba(0, 0, 0, 0.521);
+    display: flex;
+    justify-content: space-between;
+    gap: 90px;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+header button{
+    background-color: var(--azul-claro);
+    color: white;
+    font-family: rubik, sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+header button:hover{
+    background-color: var(--azul-escuro);
+}
+
+header h2{
+    color: var(--azul-escuro);
+    text-decoration: underline;
+}
+
+header nav{
+    display: flex;
+    gap: 50px;
+}
+
+nav a{
+    background-color: var(--azul-claro);
+    padding: 12px;
+    border-radius:10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav a:hover{
+    background-color: var(--azul-escuro);
+    transition: 0.4s;
+}
